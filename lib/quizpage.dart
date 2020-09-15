@@ -162,7 +162,8 @@ class _quizpageState extends State<quizpage> {
     canceltimer = false;
     timer = 30;
     setState(() {
-      if (j < 10) {
+      //j should be less than 9, there are 10 questions in the json file. and indexing starts from 0. so 9 should be the limit. 
+      if (j < 9) {
         i = random_array[j];
         j++;
       } else {
